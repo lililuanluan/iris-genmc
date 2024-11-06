@@ -89,14 +89,14 @@ int main() {
 
     assert(768 == rbuf.acquire(512, p3));
 
-    printf("rbuf.freespace(): %lu\n", rbuf.freespace());
+//     printf("rbuf.freespace(): %lu\n", rbuf.freespace());
     assert(rbuf.freespace() == 0);
 
     rbuf.release(256);
-    printf("rbuf.freespace(): %lu\n", rbuf.freespace());
+//     printf("rbuf.freespace(): %lu\n", rbuf.freespace());
     assert(256 == rbuf.freespace());
     rbuf.release(768);
-    printf("rbuf.freespace(): %lu\n", rbuf.freespace());
+//     printf("rbuf.freespace(): %lu\n", rbuf.freespace());
     assert(1024 == rbuf.freespace());
 
 
